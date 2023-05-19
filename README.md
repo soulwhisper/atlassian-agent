@@ -25,23 +25,14 @@
 * 相比较于传统的crack来说可以很容易的升级你的服务，而不用重新再次破解。
 * 提供基于java的命令行 keygen，更方便在终端环境使用。
 * 开源项目，你知道破解时都做了什么。
-
-### 直接下载
-* 直接下载本项目[release](https://github.com/pengzhile/atlassian-agent/releases)包。
-
 ### 自行编译
 * Clone本项目源码，pom.xml同级目录执行`mvn package`后即可进行编译。
-* 使用`target`目录产出的`atlassian-agent-jar-with-dependencies.jar`，而非`atlassian-agent.jar`！
-* *如果你不知道我在说什么，最好还是直接下载我编译好的包。*
+* 使用`target`目录产出的`atlassian-agent-jar-with-dependencies.jar`
 
 ### 使用帮助
-* 破解需要成套使用，不能只破解插件，要先使用`atlassian-agent.jar`破解服务。
-* 如果你已经获得`atlassian-agent.jar`，可以试着执行`java -jar atlassian-agent.jar`看看输出的帮助。
+* 破解需要成套使用，不能只破解插件，要先使用`atlassian-agent-jar-with-dependencies.jar`破解服务。
+* 如果你已经获得`atlassian-agent-jar-with-dependencies.jar`，可以试着执行`java -jar atlassian-agent-jar-with-dependencies.jar`看看输出的帮助。
 * 这里的帮助以Atlassian家的Confluence服务为例。
-
-~~**新版本的 Atlassian 服务端（只测试了 Bitbucket）加入了一个证书哈希验证，需要根据 "atlassian-extras-decoder-v2" 支持库的位置进行修改代码：`io.zhile.crack.atlassian.agent.KeyTransformer#handleLicenseDecoder`**~~
-
-~~**此处已修复，直接使用jar包即可**~~
 
 ### 重要 Important!!
 
